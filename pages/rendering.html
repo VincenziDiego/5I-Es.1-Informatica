@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es 1 // Informatica // 5I</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          >Es 1 // Informatica // 5I</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./programmazione.html"
+                >Programmazione lato client VS lato server</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sviluppatore web
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./back-end.html">Back-end</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./front-end.html">Front-end</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./fullstack.html">Fullstack</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./rendering.html"
+                >Rendering lato client VS lato server</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center mt-5">
+      <h1>Rendering lato client VS lato server</h1>
+      <h3>
+        Rendering Web: L'Arte di Visualizzare Contenuti Dinamici e Statici
+      </h3>
+      <p>
+        Quando navighiamo sul web, il browser deve trasformare il codice in una
+        pagina visibile e interattiva. A seconda del progetto web, esistono tre
+        approcci principali per raggiungere questo obiettivo, ognuno con i
+        propri punti di forza e debolezza: Server-Side Rendering (SSR),
+        Client-Side Rendering (CSR) e Static Site Generation (SSG).
+      </p>
+      <h3>Server-Side Rendering (SSR) - Il Metodo Tradizionale</h3>
+      <p>
+        Il rendering lato server (SSR) è la tecnica per cui il server esegue
+        degli script per generare una pagina web completa, comprensiva di codice
+        HTML, CSS e JavaScript, prima di inviarla al browser dell'utente.
+      </p>
+      <ul>
+        <li>
+          Vantaggi: Il più grande beneficio di SSR è la velocità di caricamento
+          iniziale, poiché la pagina è già "pronta" quando arriva al client.
+          Questo rende il metodo ideale per siti con molti contenuti statici e,
+          in generale, è molto vantaggioso per il posizionamento SEO, dato che i
+          crawler dei motori di ricerca possono indicizzare il contenuto con
+          facilità.
+        </li>
+        <li>
+          Svantaggi: Lo svantaggio principale si manifesta in siti con un alto
+          numero di interazioni o richieste. Ogni singola azione che richiede un
+          aggiornamento del contenuto genera una nuova richiesta al server, che
+          deve rigenerare e inviare una nuova pagina. Questo può sovraccaricare
+          il server e rallentare la risposta, rendendolo poco adatto per
+          applicazioni web complesse.
+        </li>
+      </ul>
+      <h3>Client-Side Rendering (CSR) - L'Approccio Moderno</h3>
+      <p>
+        Con il rendering lato client (CSR), il server invia al browser solo un
+        documento HTML di base e gli script (principalmente JavaScript). Sarà
+        poi il browser dell'utente a eseguire questi script per costruire e
+        visualizzare la pagina web.
+      </p>
+      <ul>
+        <li>
+          Vantaggi: CSR eccelle nei progetti con molte interazioni. Una volta
+          che gli script sono stati caricati inizialmente, la navigazione
+          successiva e gli aggiornamenti della pagina avvengono molto
+          velocemente, senza dover ricaricare l'intera pagina o sovraccaricare
+          il server. Questo si traduce in un'esperienza utente fluida, tipica
+          delle applicazioni. Inoltre, il codice sorgente è visibile al client,
+          il che può essere utile per la trasparenza.
+        </li>
+        <li>
+          Svantaggi: Il problema principale di CSR è che il caricamento iniziale
+          può essere lento, perché il browser deve scaricare e interpretare
+          tutti gli script. Questo può avere un impatto negativo sulla SEO,
+          poiché molti crawler hanno difficoltà a indicizzare correttamente il
+          contenuto dinamico. Un altro svantaggio è la dipendenza da JavaScript,
+          che può essere bloccato da estensioni del browser, rendendo il sito
+          non funzionale per alcuni utenti.
+        </li>
+      </ul>
+      <h3>Static Site Generation (SSG) - Il Compromesso Ideale</h3>
+      <p>
+        La generazione di siti statici (SSG) rappresenta un'evoluzione che cerca
+        di combinare il meglio dei due mondi. Le pagine vengono generate in
+        anticipo ("prerendering"), prima che l'utente le richieda, utilizzando
+        appositi generatori di siti statici (come Jekyll, Hugo o Next.js).
+      </p>
+      <ul>
+        <li>
+          Vantaggi: SSG offre velocità di caricamento eccezionali e
+          un'esperienza utente fluida, con pagine già pronte da servire
+          istantaneamente. È ideale per siti con contenuti che non cambiano
+          spesso, come blog o siti personali. Inoltre, riduce al minimo il
+          rischio di attacchi, dato che il codice viene eseguito in fase di
+          build e non a ogni richiesta del client, e non sovraccarica il server.
+        </li>
+        <li>
+          Svantaggi: L'approccio SSG si rivela impraticabile per progetti con
+          contenuti che cambiano di frequente. Ogni modifica, anche la più
+          piccola, richiede un processo di "ricostruzione" dell'intero sito, che
+          può diventare molto lungo e inefficiente man mano che il numero di
+          pagine cresce.
+        </li>
+      </ul>
+      <h3>Conclusione: Scegliere l'Approccio Giusto</h3>
+      <p>
+        La scelta tra SSR, CSR e SSG dipende dalle esigenze specifiche del
+        progetto. SSR è perfetto per siti statici che necessitano di un ottimo
+        posizionamento SEO. CSR è l'opzione migliore per applicazioni web
+        complesse e ricche di interazioni. SSG offre la massima velocità e
+        sicurezza per siti con contenuti stabili. Valutare attentamente queste
+        caratteristiche vi aiuterà a trovare l'approccio di rendering più adatto
+        alla vostra applicazione web.
+      </p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es 1 // Informatica // 5I</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          >Es 1 // Informatica // 5I</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./programmazione.html"
+                >Programmazione lato client VS lato server</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sviluppatore web
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./back-end.html">Back-end</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./front-end.html">Front-end</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./fullstack.html">Fullstack</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./rendering.html"
+                >Rendering lato client VS lato server</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center mt-5">
+      <h1>Programmazione lato client VS lato server</h1>
+      <h3>
+        La Programmazione Web: L'Arte di Sviluppare Applicazioni per Internet
+      </h3>
+      <p>
+        Nel mondo dello sviluppo web, la distinzione tra programmazione lato
+        client e lato server è fondamentale. Entrambe le metodologie lavorano in
+        un'architettura client/server 🤝, ma si differenziano per dove viene
+        eseguito il codice. La programmazione lato server si riferisce allo
+        sviluppo di applicazioni che girano principalmente sul server. Queste
+        applicazioni elaborano le richieste degli utenti e restituiscono al
+        client, ovvero al browser, pagine HTML (HyperText Markup Language)
+        dinamiche.
+      </p>
+      <h3>Lato Client vs. Lato Server: Differenze Cruciali</h3>
+      <p>
+        La principale differenza risiede nel luogo dell'esecuzione del codice:
+      </p>
+
+      <ul>
+        <li>
+          Lato Client: Il codice viene scaricato e interpretato direttamente dal
+          browser dell'utente (es. JavaScript). Questo metodo permette di
+          eseguire logica e processi direttamente sul computer locale. Sebbene
+          sia leggero e veloce, presenta lo svantaggio di una potenziale
+          incompatibilità tra diversi browser.
+        </li>
+        <li>
+          Lato Server: Il codice viene elaborato dal server. All'utente arriva
+          solo il risultato finale, tipicamente una pagina HTML. Questo
+          approccio garantisce numerosi vantaggi, come la compatibilità
+          universale tra i browser e la dinamicità delle pagine. Inoltre, un
+          aspetto cruciale è la sicurezza: il codice sorgente non è mai esposto
+          all'utente, che può visualizzare solo l'output.
+        </li>
+      </ul>
+
+      <h3>Tecnologie e Linguaggi per la Programmazione Lato Server</h3>
+      <p>
+        Per funzionare, un web server deve essere configurato per riconoscere i
+        file del programma, sapere dove si trova l'interprete del linguaggio e
+        indicare la cartella con il codice. Molti linguaggi lato server sono
+        anche in grado di interagire con database SQL. Ecco un'analisi delle
+        principali tecnologie descritte:
+      </p>
+
+      <ul>
+        <li>
+          CGI (Common Gateway Interface): Considerata la prima tecnologia di
+          elaborazione lato server (1993), permette l'interazione tra web server
+          e diverse fonti di dati. Semplice ma efficace, funziona con un
+          meccanismo input-output. Un programma CGI può essere scritto in quasi
+          ogni linguaggio (C, C++, Perl).
+        </li>
+        <li>
+          JSP (Java Server Pages): Basata su Java, questa tecnologia eredita i
+          vantaggi del linguaggio come l'orientamento agli oggetti e la
+          portabilità. Il suo punto debole è la complessità che può rallentare
+          lo sviluppo. Quando un utente richiede una pagina JSP, un apposito
+          "motore" sul server la compila in un "servlet" (un'applicazione Java)
+          che rimane in memoria per servire le richieste successive.
+        </li>
+        <li>
+          PHP (Pre Hypertext Processor): Linguaggio open source, flessibile e
+          versatile. PHP è uno dei più diffusi al mondo. Viene elaborato sul
+          server per produrre codice HTML. La sua grande forza è la velocità di
+          sviluppo e la capacità di interagire facilmente con i database e altri
+          protocolli. Nonostante la sua popolarità, richiede attenzione a
+          vulnerabilità e best practice di programmazione.
+        </li>
+        <li>
+          API Proprietarie: Sviluppate da aziende come Microsoft e Netscape,
+          queste librerie vengono caricate direttamente nel processo del web
+          server, migliorando l'efficienza rispetto a CGI. Tuttavia, presentano
+          due svantaggi maggiori: sono vincolate a una specifica piattaforma e
+          un errore nel codice può causare il crash dell'intero server.
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
